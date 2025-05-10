@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer utilities {
+    .bg-custom-radial {
+      background: radial-gradient(circle, 
+        rgba(30, 42, 74, 1) 22%, 
+        rgba(19, 29, 56, 0.5) 50%, 
+        rgba(10, 15, 30, 0) 100%);
+    }
+}
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer utilities {
+    .bg-custom-radial {
+      background: radial-gradient(circle, 
+        rgba(30, 42, 74, 1) 22%, 
+        rgba(19, 29, 56, 0.5) 50%, 
+        rgba(10, 15, 30, 0) 100%);
+    }
+}
+@font-face {
+  font-family: 'Vantage';
+  src: url('/fonts/Vantage.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-vantage: 'Vantage', sans-serif;
+}
