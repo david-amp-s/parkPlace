@@ -1,19 +1,20 @@
 "use client";
 
 
-import FishModel from "@/components/ui/dashboard/fishmodel";
-import Navbar from "@/components/ui/navbar";
+import Login from "@/components/login";
+import FishModel from "@/components/ui/object3D/fishmodel";
 
-
-export default function Dashboard() {
+export default function LoginApp() {
   return (
     <div className="min-h-screen  text-white bg-custom-radial flex flex-col">
-      <Navbar/>
-      <main className="flex-1 flex flex-col items-center justify-center p-4 ">
-        <h1 className="text-5xl  mb-10 font-vantage  mt-10"> PARK PLACE </h1>
-        <FishModel/> 
+      <div className="flex-1 flex flex-col items-center justify-center ">
+        <h1 className="text-6xl  mb-10 font-vantage  mt-10"> PARK PLACE </h1>
+        <section className="flex w-full items-center justify-between p-20" >
+          <Login/>
+          <FishModel/> 
+        </section>
         
-      </main>
+      </div>
     </div>
   );
 }

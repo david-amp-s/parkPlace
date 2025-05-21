@@ -6,7 +6,7 @@ import { Group } from "three";
 
 export function PondModel() {
   const modelRef = useRef<Group>(null);
-
+ 
   // Cargar el modelo y las animaciones
   const { scene, animations } = useGLTF("/models/little_pond__fish.glb");
   const { actions } = useAnimations(animations, modelRef);
